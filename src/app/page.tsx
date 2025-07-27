@@ -30,7 +30,10 @@ export default function Home() {
         }`}
       >
         <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-          <h1 className="text-2xl font-bold text-gradient">ipmob.space</h1>
+          <div className="flex items-center space-x-2">
+            <img src="/favicon.svg" alt="ipmob logo" className="w-8 h-8" />
+            <h1 className="text-2xl font-bold text-gradient">ipmob.space</h1>
+          </div>
           
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
