@@ -255,10 +255,33 @@ export default function Home() {
             technical documentation, ipmob makes your documents searchable,
             queryable, and actionable.`}
           </p>
-          <div className="bg-slate-200 dark:bg-slate-700 rounded-2xl p-12 text-center">
-            <p className="text-xl font-semibold text-slate-500 dark:text-slate-400">
-              Stealth Mode - Preview Coming Soon
-            </p>
+          <div className="bg-gradient-to-br from-slate-100 to-slate-200 dark:from-slate-800 dark:to-slate-700 rounded-2xl p-12 text-center border-2 border-dashed border-slate-300 dark:border-slate-600 relative overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-12 animate-shimmer"></div>
+            
+            <div className="relative z-10">
+              <div className="w-24 h-24 bg-gradient-to-br from-slate-300 to-slate-400 dark:from-slate-600 dark:to-slate-500 rounded-xl mx-auto mb-6 flex items-center justify-center relative">
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-400/20 to-sky-400/20 rounded-xl animate-pulse"></div>
+                <div className="grid grid-cols-2 gap-1.5">
+                  <div className="w-4 h-4 bg-white/80 rounded animate-float"></div>
+                  <div className="w-4 h-4 bg-white/80 rounded animate-float animation-delay-200"></div>
+                  <div className="w-4 h-4 bg-white/80 rounded animate-float animation-delay-400"></div>
+                  <div className="w-4 h-4 bg-white/80 rounded animate-float animation-delay-600"></div>
+                </div>
+              </div>
+              
+              <h3 className="text-2xl font-semibold text-slate-700 dark:text-slate-300 mb-3">
+                Stealth Mode
+              </h3>
+              <p className="text-lg text-slate-600 dark:text-slate-400 mb-4">
+                Product preview coming soon
+              </p>
+              
+              <div className="flex justify-center space-x-2">
+                <div className="w-2 h-2 bg-blue-500 rounded-full animate-bounce animation-delay-200"></div>
+                <div className="w-2 h-2 bg-blue-500 rounded-full animate-bounce animation-delay-400"></div>
+                <div className="w-2 h-2 bg-blue-500 rounded-full animate-bounce animation-delay-600"></div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -371,17 +394,36 @@ export default function Home() {
         .animate-fade-in {
           animation: fade-in 0.8s ease-out forwards;
         }
+        @keyframes shimmer {
+          0% {
+            transform: translateX(-100%) skewX(-12deg);
+          }
+          100% {
+            transform: translateX(200%) skewX(-12deg);
+          }
+        }
+        .animate-shimmer {
+          animation: shimmer 3s infinite;
+        }
+        @keyframes float {
+          0%, 100% {
+            transform: translateY(0px);
+          }
+          50% {
+            transform: translateY(-6px);
+          }
+        }
+        .animate-float {
+          animation: float 2s ease-in-out infinite;
+        }
         .animation-delay-200 {
           animation-delay: 0.2s;
-          opacity: 0;
         }
         .animation-delay-400 {
           animation-delay: 0.4s;
-          opacity: 0;
         }
         .animation-delay-600 {
           animation-delay: 0.6s;
-          opacity: 0;
         }
       `}</style>
     </>
