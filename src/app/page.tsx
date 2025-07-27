@@ -247,10 +247,10 @@ export default function Home() {
             Built for Document-Heavy Teams
           </h2>
           <p className="text-lg text-slate-600 dark:text-slate-300 text-center max-w-3xl mx-auto mb-12">
-            We're solving the problem of information silos in organizations.
+            {`We're solving the problem of information silos in organizations.
             Whether you're dealing with legal contracts, research papers, or
             technical documentation, ipmob makes your documents searchable,
-            queryable, and actionable.
+            queryable, and actionable.`}
           </p>
           <div className="bg-slate-200 dark:bg-slate-700 rounded-2xl p-12 text-center">
             <p className="text-xl font-semibold text-slate-500 dark:text-slate-400">
@@ -269,11 +269,11 @@ export default function Home() {
             About the Founder
           </h2>
           <p className="text-lg text-slate-600 dark:text-slate-300 text-center max-w-3xl mx-auto mb-8">
-            ipmob.space is being built by a solo founder passionate about making
+            {`ipmob.space is being built by a solo founder passionate about making
             document workflows intelligent and secure. With a focus on
             privacy-first AI solutions, we're creating tools that help teams
             unlock the knowledge trapped in their documents without compromising
-            data security.
+            data security.`}
           </p>
           <p className="text-center">
             <span className="text-slate-600 dark:text-slate-300">
@@ -298,9 +298,9 @@ export default function Home() {
             Join the Private Beta
           </h2>
           <p className="text-lg max-w-3xl mx-auto mb-12">
-            We're selectively onboarding early users who work with
+            {`We're selectively onboarding early users who work with
             document-intensive workflows. If you're interested in seeing how AI
-            can transform your document processes, we'd love to hear from you.
+            can transform your document processes, we'd love to hear from you.`}
           </p>
           <a
             href="mailto:founder@ipmob.space"
